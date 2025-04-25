@@ -1,7 +1,10 @@
 
 let volumColor = [0,0,0];
+
 painthtml();
+
 painthtmlTwo();
+
 function painthtml(){
     let html = /*HTML*/`
     <div style="width:80%;margin:auto;margin-top:40px;text-align:center;">
@@ -16,14 +19,13 @@ function painthtml(){
     `;
     document.getElementById('app').innerHTML = html;
 }
+
 function painthtmlTwo(){
     let html = /*HTML*/`
     <div id="volumIndicator" style="width:100px;height:50px;background-color:rgb(${volumColor[0]}, ${volumColor[1]}, ${volumColor[2]});text-align:center;font-weight:bold;align-content:center;margin:auto;border-radius:15px;"></div>
     `;
     document.getElementById('volumConteiner').innerHTML = html;
 }
-
-
 
 const canvas = document.getElementById('colorWheel');
 const ctx = canvas.getContext('2d');
